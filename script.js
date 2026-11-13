@@ -264,10 +264,10 @@ const TECH = [
     short: { en: "A Raspberry Pi web server for the center's 3D printers: inventors upload files, a manager approves each job, the system tracks printer status and filament, and sends a monthly print report.",
              he: "שרת אתר על Raspberry Pi למדפסות התלת‑ממד של המרכז: ממציאים מעלים קבצים, אחראי מאשר כל הדפסה, המערכת עוקבת אחרי מצב המדפסות והחומר, ומפיקה דוח הדפסות חודשי." },
     chips: ["Raspberry Pi", "Web server", "Bambu Lab P1S", "Monthly reports"] },
-  { id: "api", status: "live", art: SVG.api, url: "api-project/",
+  { id: "api", status: "live", art: SVG.api, url: "https://eliran-technion.github.io/object-compass/",
     title: { en: "Object Compass · phone sensors × live APIs", he: "מצפן אובייקטים · חיישני הטלפון × API חי" },
-    short: { en: "Pick one thing and your phone points at it: the Western Wall, Mount Hermon (with a live visibility check), the plane overhead, the ISS and its next pass. GPS and orientation sensors meet live flight, satellite and weather data.",
-             he: "בוחרים דבר אחד והטלפון מצביע עליו: הכותל, החרמון (כולל בדיקת ראות בזמן אמת), המטוס שמעליך, תחנת החלל והמעבר הבא שלה. GPS וחיישני כיוון פוגשים נתוני טיסות, לוויינים ומזג אוויר חיים." },
+    short: { en: "A phone app on the web: pick one thing and your phone points at it. A landmark, any address, Mount Hermon (with a live visibility check), the plane overhead, the ISS and its next pass. GPS and orientation sensors meet live flight, satellite, map and weather data.",
+             he: "אפליקציית טלפון ברשת: בוחרים דבר אחד והטלפון מצביע עליו. ציון דרך, כל כתובת, החרמון (כולל בדיקת ראות בזמן אמת), המטוס שמעליך, תחנת החלל והמעבר הבא שלה. GPS וחיישני כיוון פוגשים נתוני טיסות, לוויינים, מפות ומזג אוויר חיים." },
     chips: ["Geolocation", "DeviceOrientation", "CelesTrak", "adsb.lol", "Open-Meteo"] },
 ];
 

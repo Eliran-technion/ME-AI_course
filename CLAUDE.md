@@ -16,7 +16,7 @@ Read this first in any new session working on this repo.
 - Known pitfall: if a file is open/dirty in VS Code, his editor can overwrite Claude's write. After writing, re-stage the file and verify the content landed; tell him to close the editor tabs before committing.
 
 ## Landing page (root of repo), done
-- `index.html`: structure. Loads `style.css?v=N` and `script.js?v=N`. **Bump N on every CSS/JS change** (GitHub Pages + browsers cache aggressively). Current: v=12.
+- `index.html`: structure. Loads `style.css?v=N` and `script.js?v=N`. **Bump N on every CSS/JS change** (GitHub Pages + browsers cache aggressively). Current: v=13.
 - `style.css`: dark drafting-table theme, animated aurora background (orange/magenta/blue/teal), JetBrains Mono labels, responsive. Fonts: Unbounded, Rubik, Secular One (HE headings).
 - `script.js`: all content and logic.
   - `LINKS`: LinkedIn, Instagram (elirandayan12), email, WhatsApp (972508512727).
@@ -28,13 +28,9 @@ Read this first in any new session working on this repo.
 - `assets/`: images (studio-composited project photos, H.U.B renders, PSU AI render).
 - Facts to respect: P2G was never founded as a company; it was the framing of the Sandbox challenge. Don't call him CTO/co-founder.
 
-## API project (bonus: API + phone sensors), built
-- `api-project/`: "Object Compass". User picks ONE target, only it shows on the dial. Bilingual (reads the same `lang` localStorage key as the landing page).
-- Files: `index.html`, `style.css`, `app.js` (all logic), `config.js` (FLIGHT_PROXY, radius, magnetic declination +5°). Bump their `?v=` too on changes.
-- Sensors: Geolocation + DeviceOrientation (iOS `webkitCompassHeading` after `requestPermission`; Android `deviceorientationabsolute` → rotation matrix, back-camera axis). No sensor → manual slider.
-- Targets: places + user-saved points (localStorage), Sun/Moon (computed), satellites (CelesTrak TLE cached 6h + satellite.js, next pass), aircraft (adsb.lol via Cloudflare Worker `worker/flights-proxy.js`, route from adsbdb), Hermon/Meron visibility from Open-Meteo.
-- Tested from the live origin: adsb.lol/OpenSky/airplanes.live/adsb.fi have NO CORS; public CORS proxies are dead or need keys. CelesTrak, Open-Meteo, adsbdb work directly.
-- Ships: not built (AIS needs a private key); would go through the same worker.
+## API project (bonus: API + phone sensors), moved to its own repo
+- "Object Compass" lives in Eliran-technion/object-compass (own GitHub Pages site, own CLAUDE.md). Local: C:\Users\Elira\projects\object-compass.
+- The landing TECH item `id: "api"` links to https://eliran-technion.github.io/object-compass/. The old `api-project/` folder here was removed.
 
 ## Related repos
 - Eliran-technion/silver-robotics: FRC team structure site.
