@@ -161,6 +161,14 @@ const SVG = {
     <g fill="none" stroke="#ecebe6" stroke-opacity=".8"><path d="M150 130 l50 20 l50 -20 l-50 -20 z"/><path d="M150 95 l50 20 l50 -20 l-50 -20 z" stroke="#ff8a3d"/><path d="M150 60 l50 20 l50 -20 l-50 -20 z"/><path d="M150 25 l50 20 l50 -20 l-50 -20 z" stroke="#6fb6ff"/></g>
     <g stroke="#9ba0a5" stroke-dasharray="3 4"><line x1="200" y1="45" x2="200" y2="55"/><line x1="200" y1="80" x2="200" y2="90"/><line x1="200" y1="115" x2="200" y2="125"/></g>
     <text x="270" y="100" font-family="JetBrains Mono, monospace" font-size="10" fill="#9ba0a5">CAD → web · 3 modules</text></svg>`,
+  calwidget: `<svg viewBox="0 0 400 175" role="img" aria-label="Weekly calendar widget">
+    <rect width="400" height="175" fill="#101418"/>
+    <rect x="70" y="18" width="260" height="140" rx="12" fill="#1b2026" stroke="#2e3640"/>
+    ${[0,1,2,3,4].map(i=>`<text x="${103+i*48}" y="36" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="9" fill="#9ba0a5">${["SUN","MON","TUE","WED","THU"][i]}</text><line x1="${80+i*48}" y1="44" x2="${80+i*48}" y2="150" stroke="#2a3138"/>`).join("")}
+    ${[0,1,2,3].map(i=>`<line x1="80" y1="${62+i*24}" x2="320" y2="${62+i*24}" stroke="#232a31"/>`).join("")}
+    <rect x="84" y="48" width="40" height="30" rx="4" fill="#ff8a3d" opacity=".9"/><rect x="132" y="70" width="40" height="40" rx="4" fill="#6fb6ff" opacity=".9"/>
+    <rect x="180" y="52" width="40" height="22" rx="4" fill="#12c4a8" opacity=".9"/><rect x="228" y="96" width="40" height="44" rx="4" fill="#c8102e" opacity=".9"/><rect x="276" y="60" width="40" height="28" rx="4" fill="#e0338f" opacity=".9"/>
+    <text x="200" y="170" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="9" fill="#9ba0a5">auto-refresh · exam countdown</text></svg>`,
   printfarm: `<svg viewBox="0 0 400 175" role="img" aria-label="Print management system diagram">
     <rect width="400" height="175" fill="#14100f"/>
     <rect x="30" y="58" width="74" height="50" rx="6" fill="#1f2a1f" stroke="#6fbf73"/><text x="67" y="80" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="10" fill="#9fe0a3">Raspberry</text><text x="67" y="94" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="10" fill="#9fe0a3">Pi</text>
@@ -236,6 +244,11 @@ const TECH = [
     short: { en: "A web page that maps every role in a new FRC team, so students choose their path before placement talks with the captains.",
              he: "דף אינטרנט שממפה כל תפקיד בקבוצת FRC חדשה, כדי שכל תלמיד יכוון את עצמו לפני שיחות השיבוץ עם הקפטנים." },
     chips: ["HTML/CSS", "GitHub Pages", "Built with AI"] },
+  { id: "calwidget", status: "done", art: SVG.calwidget, url: "https://github.com/Eliran-technion/desktop-calendar-widget",
+    title: { en: "Live desktop calendar widget", he: "ווידג'ט יומן חי לשולחן העבודה" },
+    short: { en: "A Python desktop widget for Windows that shows Google calendars as an iPad-style weekly grid, color-coded per calendar, with hover details, an exam countdown and automatic refresh every few minutes.",
+             he: "ווידג'ט Python לשולחן העבודה ב-Windows שמציג את יומני Google בתצוגה שבועית בסגנון iPad, צבע לכל יומן, פרטים במעבר עכבר, ספירה לאחור למבחן הקרוב ורענון אוטומטי כל כמה דקות." },
+    chips: ["Python", "PySide6", "iCal sync", "Windows"] },
   { id: "control", status: "wip", art: SVG.control,
     title: { en: "MehudarControl · one‑screen lab control", he: "MehudarControl · שליטה על המרכז ממסך אחד" },
     short: { en: "An Android tablet app to run the Mehudar center's TVs, casting and air conditioners from one place.",
