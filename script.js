@@ -4,9 +4,9 @@
    ========================================================= */
 const LINKS = {
   linkedin: "https://www.linkedin.com/in/%D7%90%D7%9C%D7%99%D7%A8%D7%9F-%D7%93%D7%99%D7%99%D7%9F-2aa1a1344/",
-  instagram: "",                 // TODO: e.g. "https://www.instagram.com/your_handle"
+  instagram: "https://www.instagram.com/elirandayan12/",
   email: "eli.dayan.biz@gmail.com",
-  whatsapp: "",                  // TODO: international format, digits only, e.g. "972501234567"
+  whatsapp: "972508512727",       // international format, digits only
 };
 
 /* ---------------- content (EN / HE) ---------------- */
@@ -53,8 +53,8 @@ const NOW = [
     text: { en: "Co‑founder & CTO. Presented our portable printer prototype at Sandbox Demo Day (08/2026).",
             he: "מייסד שותף ו‑CTO. הצגתי את אב הטיפוס של המדפסת הניידת ב‑Sandbox Demo Day (08/2026)." } },
   { kind: { en: "Program", he: "תוכנית" },
-    title: { en: "Shulich entrepreneurship program", he: "תוכנית שוליך ליזמות" },
-    text: { en: "Weekly entrepreneurship track, 2026–2027.", he: "מסלול יזמות שבועי, 2026–2027." } },
+    title: { en: "Shulich Leaders scholarship", he: "מלגת מנהיגי שוליך" },
+    text: { en: "Accepted in October 2026: scholarship, leadership and a weekly entrepreneurship track.", he: "התקבלתי באוקטובר 2026: מלגה, מנהיגות ומפגש יזמות שבועי." } },
   { kind: { en: "Program", he: "תוכנית" },
     title: { en: "Aneir program", he: "תוכנית אנייר" },
     text: { en: "Student leadership and community program.", he: "תוכנית סטודנטים, מנהיגות וקהילה." } },
@@ -62,6 +62,9 @@ const NOW = [
     title: { en: "FRC robotics mentor", he: "מנטור רובוטיקה FRC" },
     text: { en: "Mentored team #1580 The Blue Monkeys; now mentoring the new Kfar Silver team in its rookie season.",
             he: "ליוויתי את קבוצה 1580 The Blue Monkeys, וכעת מלווה את הקבוצה החדשה של כפר סילבר בעונת הבכורה שלה." } },
+  { kind: { en: "Program", he: "תוכנית" },
+    title: { en: "RoboPhysics · first cohort", he: "רובופיזיקה · מחזור א׳" },
+    text: { en: "Graduated the program's first cohort, April 2024.", he: "בוגר המחזור הראשון של התוכנית, אפריל 2024." } },
   { kind: { en: "Award", he: "פרס" }, award: true,
     title: { en: "Ashkelon Mayor's Award", he: "פרס ראש העיר אשקלון" },
     text: { en: "For volunteering in the community.", he: "על התנדבות בקהילה." } },
@@ -72,11 +75,11 @@ const NOW = [
 
 /* when = label shown on the timeline (edit years freely) */
 const TIMELINE = [
-  { when: { en: "Grade 7", he: "כיתה ז׳" },
+  { when: { en: "2018 · Grade 7", he: "2018 · כיתה ז׳" },
     title: { en: "Accepted to a Mofet excellence class", he: "התקבלתי לכיתת מופת" },
     text: { en: "An accelerated science and technology track, where the habit of building things started.",
             he: "מסלול מואץ למדע וטכנולוגיה, ושם התחיל ההרגל לבנות דברים." } },
-  { when: { en: "Grade 10", he: "כיתה י׳" },
+  { when: { en: "2021 · Grade 10", he: "2021 · כיתה י׳" },
     title: { en: "Head of grade cohort in the Israeli Scouts", he: "רשג״ד בצופים" },
     text: { en: "Leading a cohort of counselors and the kids they guide.", he: "הובלת שכבת מדריכים והחניכים שלהם." } },
   { when: { en: "Oct 2023", he: "אוקטובר 2023" },
@@ -86,24 +89,32 @@ const TIMELINE = [
   { when: { en: "2023–24", he: "2023–24" },
     title: { en: "Robotics program coordinator, Ashkelon Municipality", he: "רכז תוכנית הרובוטיקה בעיריית אשקלון" },
     text: { en: "Same year: running the city's robotics program for students.", he: "באותה שנה: ניהול תוכנית הרובוטיקה העירונית לתלמידים." } },
-  { when: { en: "Award", he: "פרס" },
+  { when: { en: "Apr 2024", he: "אפריל 2024" },
+    title: { en: "Completed the RoboPhysics program, first cohort", he: "סיימתי את תוכנית רובופיזיקה, מחזור א׳" },
+    text: { en: "Part of the program's very first cohort, combining physics with hands-on robotics.",
+            he: "חלק מהמחזור הראשון של התוכנית, שמשלבת פיזיקה עם רובוטיקה מעשית." } },
+  { when: { en: "Jun 2024", he: "יוני 2024" },
     title: { en: "Mayor's Award for community volunteering", he: "פרס ראש העיר על התנדבות בקהילה" },
     text: { en: "Recognition from the city of Ashkelon.", he: "הוקרה מעיריית אשקלון." } },
-  { when: { en: "Graduation", he: "סיום תיכון" },
+  { when: { en: "Jun 2024", he: "יוני 2024" },
     title: { en: "Finished high school", he: "סיימתי את התיכון" },
     text: { en: "", he: "" } },
-  { when: { en: "Ariel University", he: "אוניברסיטת אריאל" },
+  { when: { en: "2024–25 · Ariel University", he: "2024–25 · אוניברסיטת אריאל" },
     title: { en: "Atuda · Mechanical Engineering", he: "עתודה · הנדסת מכונות" },
     text: { en: "Enlisted to the IDF academic reserve and became a mentor for a Unistream youth entrepreneurship group.",
             he: "התגייסתי לעתודה האקדמית והפכתי למנטור של קבוצת יוניסטרים ליזמות בני נוער." } },
-  { when: { en: "Technion", he: "הטכניון" },
+  { when: { en: "2025 · Technion", he: "2025 · הטכניון" },
     title: { en: "Moved to the Technion, still Mechanical Engineering", he: "עברתי לטכניון, נשארתי בהנדסת מכונות" },
     text: { en: "Chose to start over at the Technion in pursuit of academic excellence.",
             he: "בחרתי להתחיל מחדש בטכניון מתוך שאיפה למצוינות אקדמית." } },
-  { when: { en: "Today", he: "היום" },
+  { when: { en: "Aug 2026 · today", he: "אוגוסט 2026 · היום" },
     title: { en: "Mehudar Center for Inventors", he: "מרכז מהודר לממציאים" },
     text: { en: "Operations & technology development: I run the lab and support inventors' engineering and technology needs.",
             he: "רכז תפעול ופיתוח טכנולוגי: מנהל את המעבדה ותומך בצרכים ההנדסיים והטכנולוגיים של הממציאים." } },
+  { when: { en: "Oct 2026", he: "אוקטובר 2026" },
+    title: { en: "Accepted to the Shulich Leaders scholarship", he: "התקבלתי למלגת מנהיגי שוליך" },
+    text: { en: "A scholarship for outstanding students who combine academic excellence with leadership.",
+            he: "מלגה לסטודנטים מצטיינים שמשלבים הצטיינות אקדמית עם מנהיגות." } },
   { when: { en: "Next", he: "הבא בתור" }, next: true,
     title: { en: "…waiting for the next achievement", he: "…ורק מחכה להישג הבא" },
     text: { en: "", he: "" } },
@@ -157,7 +168,7 @@ const SVG = {
 };
 
 const PHYSICAL = [
-  { id: "hub", status: "wip", art: SVG.hub,
+  { id: "hub", status: "wip", img: "assets/hub-field.jpg", gallery: ["assets/hub-field.jpg", "assets/hub-bunker.jpg", "assets/hub-case.jpg", "assets/hub-cad.jpg", "assets/hub-cad-closed.jpg", "assets/hub-prototype.jpg", "assets/hub-prototype-lab.jpg"],
     title: { en: "H.U.B — a 3D printer in a suitcase", he: "H.U.B — מדפסת תלת‑ממד במזוודה" },
     short: { en: "The challenge: a full FDM printer that one soldier can carry, sealed, deployed in minutes.",
              he: "האתגר: מדפסת FDM מלאה שחייל אחד נושא לבד, אטומה, ונפרסת תוך דקות." },
@@ -170,11 +181,11 @@ const PHYSICAL = [
            ["solution", "מנגנון מספריים מרים את המשטח במקום מגדלי Z גבוהים, שלוש מסילות MGN7 נושאות את התנועה, וכל הממשקים (מסך, כפתור, USB וחשמל) יושבים בגובה המשטח, כך שהם חשופים רק כשהמזוודה פתוחה. בגרסה האחרונה ויתרנו לגמרי על המסבים בצירי המספריים."],
            ["build", "אב טיפוס שנבנה בפחות מ‑2,000 ₪ והוצג ב‑Sandbox Demo Day (08/2026). הבא בתור: בורג T10 לציר Z, עבודה על צריכת חשמל ומהירות הדפסה, ומסלול להסמכה צבאית מלאה."]],
     } },
-  { id: "psu", status: "wip", art: SVG.psu,
+  { id: "psu", status: "wip", img: "assets/psu-render.jpg", gallery: ["assets/psu-render.jpg"],
     title: { en: "Bench power supply from scratch", he: "ספק כוח מעבדתי מאפס" },
     short: { en: "The challenge: designing my own voltage regulation and current limiting instead of buying a ready module.",
              he: "האתגר: לתכנן בעצמי ייצוב מתח והגבלת זרם במקום לקנות מודול מוכן." },
-    chips: ["Power electronics", "CV / CC", "Enclosure design"],
+    chips: ["Power electronics", "CV / CC", "Concept render"],
     detail: {
       en: [["challenge", "Every lab needs a supply you can trust when a prototype shorts out. Buying a module would take an afternoon; designing the regulation and current‑limit loop myself is the real lesson, and the harder path."],
            ["solution", "Start from a 24 V supply I already own, design adjustable constant‑voltage and constant‑current stages, add clear V/A readouts and protection, and package it in a printed enclosure built for a workbench."],
