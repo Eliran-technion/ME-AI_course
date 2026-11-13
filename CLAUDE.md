@@ -16,7 +16,7 @@ Read this first in any new session working on this repo.
 - Known pitfall: if a file is open/dirty in VS Code, his editor can overwrite Claude's write. After writing, re-stage the file and verify the content landed; tell him to close the editor tabs before committing.
 
 ## Landing page (root of repo), done
-- `index.html`: structure. Loads `style.css?v=N` and `script.js?v=N`. **Bump N on every CSS/JS change** (GitHub Pages + browsers cache aggressively). Current: v=13.
+- `index.html`: structure. Loads `style.css?v=N` and `script.js?v=N`. **Bump N on every CSS/JS change** (GitHub Pages + browsers cache aggressively). Current: v=14.
 - `style.css`: dark drafting-table theme, animated aurora background (orange/magenta/blue/teal), JetBrains Mono labels, responsive. Fonts: Unbounded, Rubik, Secular One (HE headings).
 - `script.js`: all content and logic.
   - `LINKS`: LinkedIn, Instagram (elirandayan12), email, WhatsApp (972508512727).

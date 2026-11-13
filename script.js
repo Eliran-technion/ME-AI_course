@@ -176,9 +176,19 @@ const SVG = {
     <rect x="30" y="128" width="74" height="24" rx="4" fill="#c8102e"/><text x="67" y="144" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="10" fill="#fff">APPROVE ✓</text>
     <text x="280" y="148" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="10" fill="#9ba0a5">3× P1S · U1 · monthly report.xlsx</text>
     <text x="200" y="30" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="11" fill="#9ba0a5">upload → approve → print → report</text></svg>`,
-  api: `<svg viewBox="0 0 400 175" role="img" aria-label="API project placeholder">
-    <rect width="400" height="175" fill="#0f141b"/><text x="200" y="100" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="44" fill="#6fb6ff">{ api }</text>
-    <text x="200" y="138" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="10" fill="#9ba0a5">GET /next-project → 202 Accepted</text></svg>`,
+  api: `<svg viewBox="0 0 400 175" role="img" aria-label="Object Compass: a compass that points at live API data">
+    <defs><radialGradient id="ocg" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#1d2125"/><stop offset="100%" stop-color="#11161c"/></radialGradient></defs>
+    <rect width="400" height="175" fill="#0f141b"/>
+    <circle cx="108" cy="86" r="64" fill="url(#ocg)" stroke="#2b3035" stroke-width="2"/>
+    <line x1="108.0" y1="26.0" x2="108.0" y2="36.0" stroke="#9ba0a5" stroke-width="2"/><line x1="123.5" y1="28.0" x2="122.2" y2="32.9" stroke="#3a4047" stroke-width="1.2"/><line x1="138.0" y1="34.0" x2="135.5" y2="38.4" stroke="#3a4047" stroke-width="1.2"/><line x1="150.4" y1="43.6" x2="146.9" y2="47.1" stroke="#3a4047" stroke-width="1.2"/><line x1="160.0" y1="56.0" x2="155.6" y2="58.5" stroke="#3a4047" stroke-width="1.2"/><line x1="166.0" y1="70.5" x2="161.1" y2="71.8" stroke="#3a4047" stroke-width="1.2"/><line x1="168.0" y1="86.0" x2="158.0" y2="86.0" stroke="#9ba0a5" stroke-width="2"/><line x1="166.0" y1="101.5" x2="161.1" y2="100.2" stroke="#3a4047" stroke-width="1.2"/><line x1="160.0" y1="116.0" x2="155.6" y2="113.5" stroke="#3a4047" stroke-width="1.2"/><line x1="150.4" y1="128.4" x2="146.9" y2="124.9" stroke="#3a4047" stroke-width="1.2"/><line x1="138.0" y1="138.0" x2="135.5" y2="133.6" stroke="#3a4047" stroke-width="1.2"/><line x1="123.5" y1="144.0" x2="122.2" y2="139.1" stroke="#3a4047" stroke-width="1.2"/><line x1="108.0" y1="146.0" x2="108.0" y2="136.0" stroke="#9ba0a5" stroke-width="2"/><line x1="92.5" y1="144.0" x2="93.8" y2="139.1" stroke="#3a4047" stroke-width="1.2"/><line x1="78.0" y1="138.0" x2="80.5" y2="133.6" stroke="#3a4047" stroke-width="1.2"/><line x1="65.6" y1="128.4" x2="69.1" y2="124.9" stroke="#3a4047" stroke-width="1.2"/><line x1="56.0" y1="116.0" x2="60.4" y2="113.5" stroke="#3a4047" stroke-width="1.2"/><line x1="50.0" y1="101.5" x2="54.9" y2="100.2" stroke="#3a4047" stroke-width="1.2"/><line x1="48.0" y1="86.0" x2="58.0" y2="86.0" stroke="#9ba0a5" stroke-width="2"/><line x1="50.0" y1="70.5" x2="54.9" y2="71.8" stroke="#3a4047" stroke-width="1.2"/><line x1="56.0" y1="56.0" x2="60.4" y2="58.5" stroke="#3a4047" stroke-width="1.2"/><line x1="65.6" y1="43.6" x2="69.1" y2="47.1" stroke="#3a4047" stroke-width="1.2"/><line x1="78.0" y1="34.0" x2="80.5" y2="38.4" stroke="#3a4047" stroke-width="1.2"/><line x1="92.5" y1="28.0" x2="93.8" y2="32.9" stroke="#3a4047" stroke-width="1.2"/>
+    <text x="108" y="44" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="12" font-weight="700" fill="#ff5d5d">N</text>
+    <path d="M108 86 L148 50" stroke="#ff8a3d" stroke-width="2" stroke-dasharray="3 4" opacity=".55"/>
+    <path d="M108 86 L98 80 L141 56 Z" fill="#ff8a3d"/><path d="M108 86 L118 92 L75 116 Z" fill="#3a4047"/>
+    <circle cx="108" cy="86" r="5" fill="#ecebe6"/>
+    <circle cx="152" cy="47" r="7" fill="#ff8a3d" stroke="#0f141b" stroke-width="2"/><circle cx="152" cy="47" r="13" fill="none" stroke="#ff8a3d" stroke-width="1.5" opacity=".45"/>
+    <path d="M108 14 L114 24 L102 24 Z" fill="#6fb6ff"/>
+    <text x="282" y="96" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="40" fill="#6fb6ff">{ api }</text>
+    <text x="282" y="128" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="10" fill="#9ba0a5">GET /where-is-it → 200 OK</text></svg>`,
 };
 
 const PHYSICAL = [
