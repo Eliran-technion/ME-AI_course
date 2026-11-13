@@ -47,77 +47,74 @@ const T = {
   },
 };
 
-const NOW = [
-  { kind: { en: "Startup", he: "סטארט‑אפ" },
-    title: { en: "The Sandbox · Technion — P2G", he: "The Sandbox בטכניון — P2G" },
-    text: { en: "Co‑founder & CTO. Presented our portable printer prototype at Sandbox Demo Day (08/2026).",
-            he: "מייסד שותף ו‑CTO. הצגתי את אב הטיפוס של המדפסת הניידת ב‑Sandbox Demo Day (08/2026)." } },
-  { kind: { en: "Program", he: "תוכנית" },
-    title: { en: "Shulich Leaders scholarship", he: "מלגת מנהיגי שוליך" },
-    text: { en: "Accepted in October 2026: scholarship, leadership and a weekly entrepreneurship track.", he: "התקבלתי באוקטובר 2026: מלגה, מנהיגות ומפגש יזמות שבועי." } },
-  { kind: { en: "Program", he: "תוכנית" },
-    title: { en: "Aneir program", he: "תוכנית אנייר" },
-    text: { en: "Student leadership and community program.", he: "תוכנית סטודנטים, מנהיגות וקהילה." } },
-  { kind: { en: "Mentoring", he: "הדרכה" },
-    title: { en: "FRC robotics mentor", he: "מנטור רובוטיקה FRC" },
-    text: { en: "Mentored team #1580 The Blue Monkeys; now mentoring the new Kfar Silver team in its rookie season.",
-            he: "ליוויתי את קבוצה 1580 The Blue Monkeys, וכעת מלווה את הקבוצה החדשה של כפר סילבר בעונת הבכורה שלה." } },
-  { kind: { en: "Program", he: "תוכנית" },
-    title: { en: "RoboPhysics · first cohort", he: "רובופיזיקה · מחזור א׳" },
-    text: { en: "Graduated the program's first cohort, April 2024.", he: "בוגר המחזור הראשון של התוכנית, אפריל 2024." } },
-  { kind: { en: "Award", he: "פרס" }, award: true,
-    title: { en: "Ashkelon Mayor's Award", he: "פרס ראש העיר אשקלון" },
-    text: { en: "For volunteering in the community.", he: "על התנדבות בקהילה." } },
-  { kind: { en: "Track", he: "מסלול" },
-    title: { en: "IDF Atuda (academic reserve)", he: "עתודה אקדמית" },
-    text: { en: "Mechanical Engineering B.Sc. as an Atuda cadet.", he: "תואר ראשון בהנדסת מכונות במסלול העתודה." } },
-];
-
-/* when = label shown on the timeline (edit years freely) */
+/* Timeline: each title opens to show details. links: [{label:{en,he}, url}], logo: optional image path */
 const TIMELINE = [
   { when: { en: "2018 · Grade 7", he: "2018 · כיתה ז׳" },
     title: { en: "Accepted to a Mofet excellence class", he: "התקבלתי לכיתת מופת" },
-    text: { en: "An accelerated science and technology track, where the habit of building things started.",
-            he: "מסלול מואץ למדע וטכנולוגיה, ושם התחיל ההרגל לבנות דברים." } },
+    text: { en: "An accelerated science and technology track. This is where the habit of building things started.",
+            he: "מסלול מואץ למדע וטכנולוגיה. שם התחיל ההרגל לבנות דברים." } },
   { when: { en: "2021 · Grade 10", he: "2021 · כיתה י׳" },
     title: { en: "Head of grade cohort in the Israeli Scouts", he: "רשג״ד בצופים" },
-    text: { en: "Leading a cohort of counselors and the kids they guide.", he: "הובלת שכבת מדריכים והחניכים שלהם." } },
+    text: { en: "Leading a cohort of counselors and the kids they guide: planning activities, running trips and taking responsibility for a whole age group.",
+            he: "הובלת שכבת מדריכים והחניכים שלהם: תכנון פעולות, הובלת טיולים ואחריות על שכבת גיל שלמה." },
+    links: [{ label: { en: "Israeli Scouts", he: "תנועת הצופים" }, url: "https://www.zofim.org.il/" }] },
   { when: { en: "Oct 2023", he: "אוקטובר 2023" },
     title: { en: "Volunteering in Ashkelon's shelters", he: "התנדבות במקלטים באשקלון" },
-    text: { en: "When the Swords of Iron war began, I spent the days with children in the city's shelters.",
-            he: "כשפרצה מלחמת חרבות ברזל, העברתי את הימים עם ילדים במקלטים בעיר." } },
+    text: { en: "When the Swords of Iron war began, I spent the days with children in the city's shelters, keeping them busy and calm.",
+            he: "כשפרצה מלחמת חרבות ברזל, העברתי את הימים עם ילדים במקלטים בעיר, כדי להעסיק ולהרגיע אותם." } },
   { when: { en: "2023–24", he: "2023–24" },
     title: { en: "Robotics program coordinator, Ashkelon Municipality", he: "רכז תוכנית הרובוטיקה בעיריית אשקלון" },
-    text: { en: "Same year: running the city's robotics program for students.", he: "באותה שנה: ניהול תוכנית הרובוטיקה העירונית לתלמידים." } },
+    text: { en: "In the same year, I ran the city's robotics program for students.", he: "באותה שנה ניהלתי את תוכנית הרובוטיקה העירונית לתלמידים." } },
   { when: { en: "Apr 2024", he: "אפריל 2024" },
     title: { en: "Completed the RoboPhysics program, first cohort", he: "סיימתי את תוכנית רובופיזיקה, מחזור א׳" },
     text: { en: "Part of the program's very first cohort, combining physics with hands-on robotics.",
-            he: "חלק מהמחזור הראשון של התוכנית, שמשלבת פיזיקה עם רובוטיקה מעשית." } },
+            he: "הייתי חלק מהמחזור הראשון של התוכנית, שמשלבת פיזיקה עם רובוטיקה מעשית." } },
   { when: { en: "Jun 2024", he: "יוני 2024" },
-    title: { en: "Mayor's Award for community volunteering", he: "פרס ראש העיר על התנדבות בקהילה" },
-    text: { en: "Recognition from the city of Ashkelon.", he: "הוקרה מעיריית אשקלון." } },
+    title: { en: "Ashkelon Mayor's Award for community volunteering", he: "פרס ראש העיר אשקלון על התנדבות בקהילה" },
+    text: { en: "Recognition from the city of Ashkelon for volunteering in the community.", he: "הוקרה מעיריית אשקלון על התנדבות בקהילה." } },
   { when: { en: "Jun 2024", he: "יוני 2024" },
     title: { en: "Finished high school", he: "סיימתי את התיכון" },
-    text: { en: "", he: "" } },
+    text: { en: "Graduated and headed straight for engineering.", he: "סיימתי י״ב והמשכתי ישר להנדסה." } },
+  { when: { en: "Sep 2024", he: "ספטמבר 2024" },
+    title: { en: "Mentor, FRC team #1580 The Blue Monkeys", he: "מנטור בקבוצת FRC 1580 The Blue Monkeys" },
+    text: { en: "Guiding high‑school students through design, build and competition in FIRST Robotics.",
+            he: "ליווי תלמידי תיכון בתכנון, בבנייה ובתחרות של FIRST Robotics." },
+    links: [{ label: { en: "FIRST Israel", he: "FIRST ישראל" }, url: "https://www.firstisrael.org.il/" }] },
   { when: { en: "2024–25 · Ariel University", he: "2024–25 · אוניברסיטת אריאל" },
-    title: { en: "Atuda · Mechanical Engineering", he: "עתודה · הנדסת מכונות" },
-    text: { en: "Enlisted to the IDF academic reserve and became a mentor for a Unistream youth entrepreneurship group.",
-            he: "התגייסתי לעתודה האקדמית והפכתי למנטור של קבוצת יוניסטרים ליזמות בני נוער." } },
+    title: { en: "Atuda (IDF academic reserve) · Mechanical Engineering", he: "עתודה אקדמית · הנדסת מכונות" },
+    text: { en: "Enlisted to the academic reserve, finished my first year with an average of about 90, and mentored a Unistream youth entrepreneurship group.",
+            he: "התגייסתי לעתודה האקדמית, סיימתי שנה א׳ בממוצע של כ‑90, והייתי מנטור של קבוצת יוניסטרים ליזמות בני נוער." },
+    links: [{ label: { en: "Unistream", he: "יוניסטרים" }, url: "https://www.unistream.co.il/" }] },
   { when: { en: "2025 · Technion", he: "2025 · הטכניון" },
     title: { en: "Moved to the Technion, still Mechanical Engineering", he: "עברתי לטכניון, נשארתי בהנדסת מכונות" },
     text: { en: "Chose to start over at the Technion in pursuit of academic excellence.",
-            he: "בחרתי להתחיל מחדש בטכניון מתוך שאיפה למצוינות אקדמית." } },
+            he: "בחרתי להתחיל מחדש בטכניון מתוך שאיפה למצוינות אקדמית." },
+    links: [{ label: { en: "Technion", he: "הטכניון" }, url: "https://www.technion.ac.il/" }] },
+  { when: { en: "Aug 2026", he: "אוגוסט 2026" },
+    title: { en: "P2G at Sandbox Demo Day", he: "P2G ב‑Sandbox Demo Day" },
+    text: { en: "As co‑founder and CTO, I presented our portable 3D printer prototype, H.U.B, at the Technion's Sandbox Demo Day.",
+            he: "כמייסד שותף ו‑CTO הצגתי את אב הטיפוס של המדפסת הניידת שלנו, H.U.B, ב‑Sandbox Demo Day בטכניון." } },
   { when: { en: "Aug 2026 · today", he: "אוגוסט 2026 · היום" },
     title: { en: "Mehudar Center for Inventors", he: "מרכז מהודר לממציאים" },
-    text: { en: "Operations & technology development: I run the lab and support inventors' engineering and technology needs.",
-            he: "רכז תפעול ופיתוח טכנולוגי: מנהל את המעבדה ותומך בצרכים ההנדסיים והטכנולוגיים של הממציאים." } },
+    text: { en: "Operations & technology development: I run the lab and support the inventors' engineering and technology needs.",
+            he: "רכז תפעול ופיתוח טכנולוגי: מנהל את המעבדה ותומך בצרכים ההנדסיים והטכנולוגיים של הממציאים." },
+    links: [{ label: { en: "T‑Hub · Mehudar", he: "T‑Hub · מהודר" }, url: "https://t-hub.technion.ac.il/" }] },
   { when: { en: "Oct 2026", he: "אוקטובר 2026" },
-    title: { en: "Accepted to the Shulich Leaders scholarship", he: "התקבלתי למלגת מנהיגי שוליך" },
-    text: { en: "A scholarship for outstanding students who combine academic excellence with leadership.",
-            he: "מלגה לסטודנטים מצטיינים שמשלבים הצטיינות אקדמית עם מנהיגות." } },
+    title: { en: "Schulich Leaders scholarship, Technion", he: "מלגת מנהיגי שוליך בטכניון" },
+    text: { en: "Selected for Schulich Leaders, the Technion's flagship entrepreneurship program for outstanding undergraduates, which comes with a tuition and living scholarship.",
+            he: "נבחרתי למלגת מנהיגי שוליך, תוכנית היזמות המובילה של הטכניון לסטודנטים מצטיינים לתואר ראשון, שכוללת מלגת שכר לימוד ומלגת מחיה." },
+    logo: "assets/shulich-logo.png",
+    links: [{ label: { en: "Schulich Leaders Technion", he: "מנהיגי שוליך בטכניון" }, url: "https://schulichleaders.technion.ac.il/" }] },
+  { when: { en: "2026–27", he: "2026–27" },
+    title: { en: "Aneir program", he: "תוכנית אנייר" },
+    text: { en: "Student leadership and community program.", he: "תוכנית סטודנטים, מנהיגות וקהילה." } },
+  { when: { en: "Nov 2026", he: "נובמבר 2026" },
+    title: { en: "Mentor of Kfar Silver's rookie FRC team", he: "מנטור של קבוצת ה‑FRC החדשה בכפר סילבר" },
+    text: { en: "Building a new robotics team from day one: team structure, roles and a first season.",
+            he: "בונים קבוצת רובוטיקה חדשה מהיום הראשון: מבנה קבוצה, תפקידים ועונה ראשונה." },
+    links: [{ label: { en: "Team structure site", he: "אתר מבנה הקבוצה" }, url: "https://eliran-technion.github.io/silver-robotics/" }] },
   { when: { en: "Next", he: "הבא בתור" }, next: true,
-    title: { en: "…waiting for the next achievement", he: "…ורק מחכה להישג הבא" },
-    text: { en: "", he: "" } },
+    title: { en: "…waiting for the next achievement", he: "…ורק מחכה להישג הבא" } },
 ];
 
 /* ---------- drawings for projects without photos yet ---------- */
@@ -162,13 +159,20 @@ const SVG = {
     <g fill="none" stroke="#ecebe6" stroke-opacity=".8"><path d="M150 130 l50 20 l50 -20 l-50 -20 z"/><path d="M150 95 l50 20 l50 -20 l-50 -20 z" stroke="#ff8a3d"/><path d="M150 60 l50 20 l50 -20 l-50 -20 z"/><path d="M150 25 l50 20 l50 -20 l-50 -20 z" stroke="#6fb6ff"/></g>
     <g stroke="#9ba0a5" stroke-dasharray="3 4"><line x1="200" y1="45" x2="200" y2="55"/><line x1="200" y1="80" x2="200" y2="90"/><line x1="200" y1="115" x2="200" y2="125"/></g>
     <text x="270" y="100" font-family="JetBrains Mono, monospace" font-size="10" fill="#9ba0a5">CAD → web · 3 modules</text></svg>`,
+  printfarm: `<svg viewBox="0 0 400 175" role="img" aria-label="Print management system diagram">
+    <rect width="400" height="175" fill="#14100f"/>
+    <rect x="30" y="58" width="74" height="50" rx="6" fill="#1f2a1f" stroke="#6fbf73"/><text x="67" y="80" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="10" fill="#9fe0a3">Raspberry</text><text x="67" y="94" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="10" fill="#9fe0a3">Pi</text>
+    ${[0,1,2,3].map(i=>`<rect x="${170+i*55}" y="54" width="44" height="54" rx="5" fill="#1e2226" stroke="#4a5158"/><rect x="${178+i*55}" y="62" width="28" height="18" rx="2" fill="${i<3?"#ff8a3d":"#6fb6ff"}" opacity=".85"/><line x1="104" y1="83" x2="${170+i*55}" y2="81" stroke="#3a4047" stroke-dasharray="3 3"/>`).join("")}
+    <rect x="30" y="128" width="74" height="24" rx="4" fill="#c8102e"/><text x="67" y="144" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="10" fill="#fff">APPROVE ✓</text>
+    <text x="280" y="148" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="10" fill="#9ba0a5">3× P1S · U1 · monthly report.xlsx</text>
+    <text x="200" y="30" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="11" fill="#9ba0a5">upload → approve → print → report</text></svg>`,
   api: `<svg viewBox="0 0 400 175" role="img" aria-label="API project placeholder">
     <rect width="400" height="175" fill="#0f141b"/><text x="200" y="100" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="44" fill="#6fb6ff">{ api }</text>
     <text x="200" y="138" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="10" fill="#9ba0a5">GET /next-project → 202 Accepted</text></svg>`,
 };
 
 const PHYSICAL = [
-  { id: "hub", status: "wip", img: "assets/hub-field.jpg", gallery: ["assets/hub-field.jpg", "assets/hub-bunker.jpg", "assets/hub-case.jpg", "assets/hub-cad.jpg", "assets/hub-cad-closed.jpg", "assets/hub-prototype.jpg", "assets/hub-prototype-lab.jpg"],
+  { id: "hub", status: "wip", img: "assets/hub-hero.jpg", gallery: ["assets/hub-hero.jpg", "assets/hub-field.jpg", "assets/hub-bunker.jpg", "assets/hub-case.jpg", "assets/hub-cad.jpg", "assets/hub-cad-closed.jpg", "assets/hub-prototype.jpg", "assets/hub-prototype-lab.jpg"],
     title: { en: "H.U.B — a 3D printer in a suitcase", he: "H.U.B — מדפסת תלת‑ממד במזוודה" },
     short: { en: "The challenge: a full FDM printer that one soldier can carry, sealed, deployed in minutes.",
              he: "האתגר: מדפסת FDM מלאה שחייל אחד נושא לבד, אטומה, ונפרסת תוך דקות." },
@@ -194,7 +198,7 @@ const PHYSICAL = [
            ["solution", "יוצאים מספק 24V שכבר יש לי, מתכננים שלבי מתח קבוע וזרם קבוע מתכווננים, מוסיפים תצוגת V/A ברורה והגנות, ואורזים הכול במארז מודפס שמתאים לשולחן עבודה."],
            ["build", "בשלב התכנון. החלקים לגרסה הראשונה בהזמנה (11/2026)."]],
     } },
-  { id: "taxi", status: "done", img: "assets/taxi-arm.jpg", gallery: ["assets/taxi-arm.jpg", "assets/taxi-cad.jpg"],
+  { id: "taxi", status: "done", img: "assets/taxi-studio.jpg", gallery: ["assets/taxi-studio.jpg", "assets/taxi-cad-studio.jpg"],
     title: { en: "Rigid articulating taxi‑meter mount", he: "זרוע מפרקית קשיחה למונה מונית" },
     short: { en: "A flexible gooseneck let the meter wobble on every bump. I replaced it with a 5‑joint arm that locks solid.",
              he: "זרוע חוליות גמישה גרמה למונה להתנדנד בכל מהמורה. החלפתי אותה בזרוע 5 מפרקים שננעלת לגמרי." },
@@ -208,7 +212,7 @@ const PHYSICAL = [
            ["build", "ארבעה מודלים ייעודיים: מתאם לתושבת המונה, תושבת שמתלבשת על בסיס הוואקום הקיים בשמשה, 2 חוליות הארכה כיווניות (זכר‑נקבה), וחוליית גישור (נקבה‑נקבה) שמוסיפה ציר קירוב והרחקה. קיבוע סופי בברגים, אומי נעילה ולוקטייט, כדי שהרעידות בדרך לא ישחררו אותה."]],
     },
     specs: [["5", { en: "joints", he: "מפרקים" }], ["4", { en: "custom parts", he: "חלקים ייעודיים" }]] },
-  { id: "shower", status: "done", img: "assets/shower-installed.jpg", gallery: ["assets/shower-installed.jpg", "assets/shower-cad.jpg"],
+  { id: "shower", status: "done", img: "assets/shower-studio.jpg", gallery: ["assets/shower-studio.jpg", "assets/shower-cad-studio.jpg"],
     title: { en: "Shower bracket retrofit", he: "מתקן חלופי לדוש מקלחת" },
     short: { en: "The holder broke and the showerhead kept falling. Measured, reverse‑engineered and printed a replacement.",
              he: "המחזיק נשבר והדוש המשיך ליפול. מדדתי, הנדסתי לאחור והדפסתי חלק חלופי." },
@@ -236,10 +240,15 @@ const TECH = [
              he: "אפליקציית אנדרואיד לטאבלט שמפעילה את המסכים, השידור והמזגנים של מרכז מהודר ממקום אחד." },
     chips: ["Android", "Smart home", "v0.3"] },
   { id: "hubweb", status: "wip", art: SVG.hubweb,
-    title: { en: "H.U.B tech hub · interactive exploded view", he: "האב הטכנולוגי של H.U.B · מבט מפוצץ אינטראקטיבי" },
-    short: { en: "Real CAD geometry turned into a scroll‑driven 3D story that takes the printer apart module by module.",
-             he: "גיאומטריית CAD אמיתית שהופכת לסיפור תלת‑ממדי בגלילה, שמפרק את המדפסת מודול אחרי מודול." },
-    chips: ["Three.js", "STEP → GLB", "CAD"] },
+    title: { en: "Tech Hub · a Claude skill for inventors", he: "האב טכנולוגי · סקיל לקלוד עבור ממציאים" },
+    short: { en: "A Claude skill that helps inventors explain their product and its problems in a simple, graphic and visual way, with an interactive exploded view built from real CAD. First tested on H.U.B.",
+             he: "סקיל לקלוד שנותן לממציאים יכולת להסביר את המוצר שלהם ואת הבעיות שלו בצורה פשוטה, גרפית וויזואלית, כולל מבט מפוצץ אינטראקטיבי מתוך ה‑CAD האמיתי. נבדק לראשונה על H.U.B." },
+    chips: ["Claude skill", "Three.js", "CAD → web"] },
+  { id: "printfarm", status: "wip", art: SVG.printfarm,
+    title: { en: "Remote print management for Mehudar", he: "מערכת שליטה מרחוק על המדפסות במהודר" },
+    short: { en: "A Raspberry Pi web server for the center's 3D printers: inventors upload files, a manager approves each job, the system tracks printer status and filament, and sends a monthly print report.",
+             he: "שרת אתר על Raspberry Pi למדפסות התלת‑ממד של המרכז: ממציאים מעלים קבצים, אחראי מאשר כל הדפסה, המערכת עוקבת אחרי מצב המדפסות והחומר, ומפיקה דוח הדפסות חודשי." },
+    chips: ["Raspberry Pi", "Web server", "Bambu Lab P1S", "Monthly reports"] },
   { id: "api", status: "soon", art: SVG.api,
     title: { en: "API project", he: "פרויקט API" },
     short: { en: "The next assignment in the course: a project built around a live API. Stay tuned.",
@@ -292,25 +301,30 @@ function render() {
   document.querySelectorAll("[data-i18n]").forEach((el) => (el.textContent = t[el.dataset.i18n]));
   $("#langSwitch").textContent = `⇆ ${t.switchTo}`;
 
-  $("#nowGrid").innerHTML = NOW.map((n) => `
-    <article class="now-card reveal ${n.award ? "award" : ""}">
-      <span class="kind">${esc(n.kind[lang])}</span>
-      <h3>${esc(n.title[lang])}</h3>
-      <p>${esc(n.text[lang])}</p>
-    </article>`).join("");
-
   const tl = $("#timeline");
   tl.querySelectorAll(".tl-item").forEach((li) => li.remove());
-  tl.insertAdjacentHTML("beforeend", TIMELINE.map((e) => `
-    <li class="tl-item reveal ${e.next ? "next" : ""}">
+  tl.insertAdjacentHTML("beforeend", TIMELINE.map((e) => e.next ? `
+    <li class="tl-item reveal next">
       <span class="tl-when">${esc(e.when[lang])}</span>
       <h3>${esc(e.title[lang])}</h3>
-      ${e.text[lang] ? `<p>${esc(e.text[lang])}</p>` : ""}
+    </li>` : `
+    <li class="tl-item reveal">
+      <details>
+        <summary>
+          <span class="tl-when">${esc(e.when[lang])}</span>
+          <span class="tl-title">${esc(e.title[lang])}<span class="tl-plus" aria-hidden="true"></span></span>
+        </summary>
+        <div class="tl-detail">
+          ${e.logo ? `<img class="tl-logo" src="${e.logo}" alt="" onerror="this.remove()">` : ""}
+          <p>${esc(e.text[lang])}</p>
+          ${e.links ? `<p class="tl-links">${e.links.map((l) => `<a href="${l.url}" target="_blank" rel="noopener">${esc(l.label[lang])} ↗</a>`).join("")}</p>` : ""}
+        </div>
+      </details>
     </li>`).join(""));
 
   $("#physicalCards").innerHTML = PHYSICAL.map((p) => `
     <button type="button" class="card reveal" data-id="${p.id}" data-group="physical">
-      <div class="card-media">${statusBadge(p.status)}${p.img ? `<img src="${p.img}" alt="${esc(p.title[lang])}" loading="lazy">` : p.art}</div>
+      <div class="card-media">${statusBadge(p.status)}${p.img ? `<img src="${p.img}" alt="${esc(p.title[lang])}">` : p.art}</div>
       <div class="card-body">
         <h3>${esc(p.title[lang])}</h3>
         <p>${esc(p.short[lang])}</p>
@@ -426,7 +440,13 @@ function setupGrid() {
   };
   resize(); addEventListener("resize", resize);
   const step = 34;
+  const t0 = performance.now();
   const draw = () => {
+    const tt = (performance.now() - t0) / 1000;
+    if (isTouch && !gyroOn) { // gentle autonomous drift instead of following the finger
+      pointer.tx = innerWidth * (0.5 + 0.35 * Math.sin(tt * 0.35));
+      pointer.ty = innerHeight * (0.45 + 0.3 * Math.sin(tt * 0.23 + 1.3));
+    }
     pointer.x += (pointer.tx - pointer.x) * 0.12;
     pointer.y += (pointer.ty - pointer.y) * 0.12;
     ctx.clearRect(0, 0, w, h);
@@ -438,7 +458,8 @@ function setupGrid() {
         const k = Math.max(0, 1 - d / R);
         const pushX = k ? ((x - px) / (d || 1)) * k * 10 * dpr : 0;
         const pushY = k ? ((y - py) / (d || 1)) * k * 10 * dpr : 0;
-        ctx.fillStyle = k > 0.02 ? `rgba(255,138,61,${0.12 + k * 0.7})` : "rgba(111,182,255,0.10)";
+        const hue = (20 + (x / w) * 140 + (y / h) * 90 + tt * 12 + scrollY * 0.05) % 360;
+        ctx.fillStyle = `hsla(${hue}, 95%, ${62 + k * 10}%, ${0.13 + k * 0.75})`;
         ctx.fillRect(x + pushX - dpr, y + pushY - dpr, (1.6 + k * 2) * dpr, (1.6 + k * 2) * dpr);
       }
     }
@@ -447,8 +468,7 @@ function setupGrid() {
   };
   draw();
   const move = (x, y) => { pointer.tx = x; pointer.ty = y; };
-  addEventListener("pointermove", (e) => move(e.clientX, e.clientY), { passive: true });
-  addEventListener("touchmove", (e) => { const t = e.touches[0]; if (t) move(t.clientX, t.clientY); }, { passive: true });
+  addEventListener("pointermove", (e) => { if (e.pointerType !== "touch") move(e.clientX, e.clientY); }, { passive: true });
 }
 
 /* ======================= motion: photo tilt (mouse + gyro) ======================= */
@@ -533,6 +553,24 @@ function updateTimeline() {
   });
 }
 
+/* ======================= touch: perspective follows scroll ======================= */
+function updatePerspective() {
+  document.documentElement.style.setProperty("--scroll", String(scrollY));
+  if (!isTouch || reduceMotion) return;
+  const vh = innerHeight;
+  if (!gyroOn) {
+    const p = Math.min(1, scrollY / (vh * 0.9));
+    tiltPhoto(0, -p * 1.2);
+  }
+  document.querySelectorAll(".card, .tl-detail").forEach((c) => {
+    const r = c.getBoundingClientRect();
+    if (r.bottom < 0 || r.top > vh) return;
+    const p = ((r.top + r.height / 2) - vh / 2) / vh; // -0.5 (top) .. 0.5 (bottom)
+    c.style.setProperty("--rx", `${(-p * 14).toFixed(2)}deg`);
+    c.style.setProperty("--ry", "0deg");
+  });
+}
+
 /* ======================= init ======================= */
 function init() {
   setupLinks();
@@ -543,7 +581,8 @@ function init() {
   $("#langSwitch").addEventListener("click", () => chooseLang(lang === "he" ? "en" : "he", false));
   $("#sheetClose").addEventListener("click", closeSheet);
   $("#sheet").addEventListener("click", (e) => { if (e.target.id === "sheet") closeSheet(); });
-  addEventListener("scroll", () => requestAnimationFrame(updateTimeline), { passive: true });
+  addEventListener("scroll", () => requestAnimationFrame(() => { updateTimeline(); updatePerspective(); }), { passive: true });
+  updatePerspective();
   addEventListener("touchstart", askMotionPermission, { once: true, passive: true });
 
   const saved = store.get("lang");

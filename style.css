@@ -300,3 +300,40 @@ html.touch .lang-btn { padding: 12px 22px; font-size: 15px; background: transpar
   *, *::before, *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
   .reveal { opacity: 1; transform: none; }
 }
+
+/* timeline accordion */
+.tl-item details summary { list-style: none; cursor: pointer; display: grid; gap: 2px; }
+.tl-item details summary::-webkit-details-marker { display: none; }
+.tl-title { display: flex; align-items: baseline; gap: 10px; font: 600 19px/1.35 var(--f-body); color: var(--ink); transition: color .2s; }
+.content[dir="rtl"] .tl-title { font-weight: 700; }
+.tl-item summary:hover .tl-title, .tl-item details[open] .tl-title { color: var(--accent); }
+.tl-plus { position: relative; flex: none; width: 12px; height: 12px; opacity: .7; }
+.tl-plus::before, .tl-plus::after { content: ""; position: absolute; left: 0; right: 0; top: 50%; height: 2px; margin-top: -1px; background: currentColor; transition: transform .25s; }
+.tl-plus::after { transform: rotate(90deg); }
+details[open] .tl-plus::after { transform: rotate(0deg); }
+.tl-detail { margin-top: 8px; padding: 14px 16px; border-radius: 12px; background: var(--surface); border: 1px solid var(--line); max-width: 66ch; display: grid; gap: 10px; animation: tlopen .3s ease; }
+.tl-detail p { margin: 0; }
+.tl-links { display: flex; flex-wrap: wrap; gap: 14px; font-size: 14.5px; }
+.tl-logo { height: 44px; width: auto; justify-self: start; background: #fff; padding: 6px 10px; border-radius: 8px; }
+@keyframes tlopen { from { opacity: 0; transform: translateY(-6px); } }
+#journey .timeline { margin-top: 40px; }
+
+/* vivid living background */
+.aurora { position: fixed; inset: -10%; z-index: -3; pointer-events: none; overflow: hidden;
+  filter: blur(70px) saturate(140%); opacity: .55;
+  transform: translate3d(0, calc(var(--scroll, 0) * -0.04px), 0) rotate(calc(var(--scroll, 0) * 0.01deg)); }
+.aurora span { position: absolute; width: 46vmax; height: 46vmax; border-radius: 50%; mix-blend-mode: screen; }
+.aurora .a1 { background: radial-gradient(circle, #ff7a2f 0%, transparent 65%); left: -8%; top: -6%; animation: drift1 22s ease-in-out infinite alternate; }
+.aurora .a2 { background: radial-gradient(circle, #e0338f 0%, transparent 65%); right: -10%; top: 10%; animation: drift2 26s ease-in-out infinite alternate; }
+.aurora .a3 { background: radial-gradient(circle, #2f6bff 0%, transparent 65%); left: 20%; bottom: -18%; animation: drift3 30s ease-in-out infinite alternate; }
+.aurora .a4 { background: radial-gradient(circle, #12c4a8 0%, transparent 65%); right: 5%; bottom: -10%; animation: drift1 34s ease-in-out infinite alternate-reverse; opacity: .8; }
+@keyframes drift1 { to { transform: translate(18vw, 22vh) scale(1.15); } }
+@keyframes drift2 { to { transform: translate(-22vw, 18vh) scale(.9); } }
+@keyframes drift3 { to { transform: translate(14vw, -24vh) scale(1.2); } }
+body { background: radial-gradient(120% 90% at 50% 0%, #15181c 0%, var(--bg) 60%); background-attachment: fixed; }
+/* keep text panels readable over the color */
+.card, .tl-detail, .lang-btn, .social, .swipe-card { backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px); }
+.card, .tl-detail { background: rgba(26, 29, 32, .82); }
+html.touch .card { transition: transform .12s linear, border-color .2s; }
+.tl-detail { transform: perspective(800px) rotateX(var(--rx, 0deg)); transition: transform .12s linear; }
+@media (prefers-reduced-motion: reduce) { .aurora span { animation: none; } .aurora { transform: none; } }
