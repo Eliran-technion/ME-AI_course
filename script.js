@@ -264,11 +264,11 @@ const TECH = [
     short: { en: "A Raspberry Pi web server for the center's 3D printers: inventors upload files, a manager approves each job, the system tracks printer status and filament, and sends a monthly print report.",
              he: "שרת אתר על Raspberry Pi למדפסות התלת‑ממד של המרכז: ממציאים מעלים קבצים, אחראי מאשר כל הדפסה, המערכת עוקבת אחרי מצב המדפסות והחומר, ומפיקה דוח הדפסות חודשי." },
     chips: ["Raspberry Pi", "Web server", "Bambu Lab P1S", "Monthly reports"] },
-  { id: "api", status: "soon", art: SVG.api,
-    title: { en: "API project", he: "פרויקט API" },
-    short: { en: "The next assignment in the course: a project built around a live API. Stay tuned.",
-             he: "המטלה הבאה בקורס: פרויקט שבנוי סביב API חי. בקרוב." },
-    chips: ["REST", "fetch()", "TryAI"] },
+  { id: "api", status: "live", art: SVG.api, url: "api-project/",
+    title: { en: "Object Compass · phone sensors × live APIs", he: "מצפן אובייקטים · חיישני הטלפון × API חי" },
+    short: { en: "Pick one thing and your phone points at it: the Western Wall, Mount Hermon (with a live visibility check), the plane overhead, the ISS and its next pass. GPS and orientation sensors meet live flight, satellite and weather data.",
+             he: "בוחרים דבר אחד והטלפון מצביע עליו: הכותל, החרמון (כולל בדיקת ראות בזמן אמת), המטוס שמעליך, תחנת החלל והמעבר הבא שלה. GPS וחיישני כיוון פוגשים נתוני טיסות, לוויינים ומזג אוויר חיים." },
+    chips: ["Geolocation", "DeviceOrientation", "CelesTrak", "adsb.lol", "Open-Meteo"] },
 ];
 
 /* ======================= helpers ======================= */
