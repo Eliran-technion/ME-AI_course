@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Eliran Dayan</title>
+  <meta name="description" content="Eliran Dayan — Mechanical Engineering student at the Technion, hardware developer, CTO & co-founder of P2G.">
+  <meta property="og:title" content="Eliran Dayan">
+  <meta property="og:description" content="Mechanical Engineering · Technion · Hardware & product development">
+  <meta property="og:image" content="assets/eliran.jpg">
+  <meta name="theme-color" content="#111315">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700&family=Rubik:wght@400;500;700&family=Secular+One&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <canvas id="grid" aria-hidden="true"></canvas>
+  <div class="glow" id="glow" aria-hidden="true"></div>
+
+  <!-- ============ STAGE 1 · HERO (always English) ============ -->
+  <header class="hero" id="top" lang="en" dir="ltr">
+    <div class="hero-photo-wrap" id="tilt">
+      <div class="hero-photo">
+        <img src="assets/eliran.jpg" alt="Portrait of Eliran Dayan" width="900" height="1089">
+        <span class="photo-shine" aria-hidden="true"></span>
+      </div>
+      <span class="dim dim-x" aria-hidden="true">Ø 1 engineer</span>
+      <span class="dim dim-y" aria-hidden="true">tol. ±0.01</span>
+    </div>
+
+    <div class="hero-text">
+      <p class="eyebrow">Ashkelon → Haifa · Mechanical Engineering</p>
+      <h1>Eliran<br><span>Dayan</span></h1>
+      <p class="roles">
+        Mechanical Engineering student, <a href="https://www.technion.ac.il/en/" target="_blank" rel="noopener">Technion</a>
+        · CTO &amp; co‑founder, P2G
+        · Operations &amp; Tech Development, Mehudar Center for Inventors
+      </p>
+      <p class="about">
+        I come from Israel's southern periphery, and I build hardware that solves real problems.
+        Five‑plus years of hands‑on SolidWorks, a portable 3D printer that folds into a suitcase,
+        and a lab full of inventors I help bring ideas to life. Off the bench, I mentor young
+        engineers, from Unistream to FRC robotics, because the next good idea usually needs one
+        person who believes in it.
+      </p>
+
+      <nav class="socials" aria-label="Contact links">
+        <a class="social" data-link="linkedin" href="#" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9.75h4v11H3v-11Zm6.5 0h3.8v1.5h.06c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.77 2.65 4.77 6.1v5.45h-4v-4.83c0-1.15-.02-2.63-1.6-2.63-1.6 0-1.85 1.25-1.85 2.55v4.91h-4V9.75Z"/></svg>
+          <span>LinkedIn</span>
+        </a>
+        <a class="social" data-link="instagram" href="#" target="_blank" rel="noopener" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 7.3a4.7 4.7 0 1 0 0 9.4 4.7 4.7 0 0 0 0-9.4Zm0 7.75a3.05 3.05 0 1 1 0-6.1 3.05 3.05 0 0 1 0 6.1ZM17.98 6.9a1.1 1.1 0 1 1-2.2 0 1.1 1.1 0 0 1 2.2 0ZM12 2.5c-2.58 0-2.9.01-3.92.06-1.01.04-1.7.2-2.31.44a4.66 4.66 0 0 0-1.68 1.1 4.66 4.66 0 0 0-1.1 1.68c-.24.6-.4 1.3-.44 2.31C2.5 9.1 2.5 9.42 2.5 12s.01 2.9.06 3.92c.04 1.01.2 1.7.44 2.31.24.63.57 1.16 1.1 1.68.52.53 1.05.86 1.68 1.1.6.24 1.3.4 2.31.44 1.02.05 1.34.06 3.92.06s2.9-.01 3.92-.06c1.01-.04 1.7-.2 2.31-.44a4.66 4.66 0 0 0 1.68-1.1 4.66 4.66 0 0 0 1.1-1.68c.24-.6.4-1.3.44-2.31.05-1.02.06-1.34.06-3.92s-.01-2.9-.06-3.92c-.04-1.01-.2-1.7-.44-2.31a4.66 4.66 0 0 0-1.1-1.68 4.66 4.66 0 0 0-1.68-1.1c-.6-.24-1.3-.4-2.31-.44C14.9 2.51 14.58 2.5 12 2.5Zm0 1.7c2.54 0 2.84.01 3.84.06.93.04 1.43.2 1.77.33.44.17.76.38 1.1.71.33.34.54.66.71 1.1.13.34.29.84.33 1.77.05 1 .06 1.3.06 3.84s-.01 2.84-.06 3.84c-.04.93-.2 1.43-.33 1.77-.17.44-.38.76-.71 1.1-.34.33-.66.54-1.1.71-.34.13-.84.29-1.77.33-1 .05-1.3.06-3.84.06s-2.84-.01-3.84-.06c-.93-.04-1.43-.2-1.77-.33a2.96 2.96 0 0 1-1.1-.71 2.96 2.96 0 0 1-.71-1.1c-.13-.34-.29-.84-.33-1.77-.05-1-.06-1.3-.06-3.84s.01-2.84.06-3.84c.04-.93.2-1.43.33-1.77.17-.44.38-.76.71-1.1.34-.33.66-.54 1.1-.71.34-.13.84-.29 1.77-.33 1-.05 1.3-.06 3.84-.06Z"/></svg>
+          <span>Instagram</span>
+        </a>
+        <a class="social" data-link="email" href="#" aria-label="Send me an email">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5.5h18a1 1 0 0 1 1 1v11a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-11a1 1 0 0 1 1-1Zm1 2.2v8.8h16V7.7l-8 5.3-8-5.3Zm1.6-.7L12 11.2 18.4 7H5.6Z"/></svg>
+          <span>Email</span>
+        </a>
+        <a class="social" data-link="whatsapp" href="#" target="_blank" rel="noopener" aria-label="Chat with me on WhatsApp">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2.5a9.43 9.43 0 0 0-8.1 14.26L2.5 21.5l4.87-1.4a9.43 9.43 0 1 0 4.67-17.6Zm0 17.2a7.77 7.77 0 0 1-3.96-1.09l-.28-.17-2.9.83.85-2.82-.19-.29a7.78 7.78 0 1 1 6.48 3.54Zm4.27-5.83c-.23-.12-1.38-.68-1.6-.76-.21-.08-.37-.12-.52.12-.16.23-.6.76-.74.91-.13.16-.27.18-.5.06a6.37 6.37 0 0 1-3.17-2.77c-.24-.41.24-.38.69-1.27.08-.15.04-.29-.02-.41-.06-.12-.52-1.26-.72-1.72-.19-.45-.38-.39-.52-.4h-.45a.86.86 0 0 0-.62.3 2.6 2.6 0 0 0-.81 1.93c0 1.14.83 2.24.95 2.4.11.15 1.63 2.5 3.96 3.5 1.47.64 2.05.69 2.78.58.45-.07 1.38-.56 1.57-1.11.2-.55.2-1.02.14-1.12-.06-.1-.21-.16-.44-.28Z"/></svg>
+          <span>WhatsApp</span>
+        </a>
+      </nav>
+      <p class="contact-plain" id="contactPlain"></p>
+    </div>
+  </header>
+
+  <!-- ============ LANGUAGE GATE ============ -->
+  <section class="gate" id="gate" aria-labelledby="gateTitle">
+    <p class="gate-q" id="gateTitle" lang="en">What's your preferred language?</p>
+    <p class="gate-q gate-q-he" lang="he" dir="rtl">באיזו שפה נמשיך?</p>
+
+    <div class="swipe-zone" id="swipeZone">
+      <span class="swipe-side side-en" aria-hidden="true">← English</span>
+      <div class="swipe-card" id="swipeCard" tabindex="0" role="group" aria-label="Swipe right for Hebrew, left for English">
+        <span class="swipe-icon" aria-hidden="true">⇆</span>
+        <span class="swipe-hint">
+          <b lang="he" dir="rtl">החלק ימינה לעברית</b>
+          <b lang="en">Swipe left for English</b>
+        </span>
+      </div>
+      <span class="swipe-side side-he" aria-hidden="true" lang="he">עברית →</span>
+    </div>
+
+    <div class="gate-buttons">
+      <button type="button" class="lang-btn" data-lang="en" id="btnEn">English</button>
+      <button type="button" class="lang-btn" data-lang="he" id="btnHe" lang="he">עברית</button>
+    </div>
+  </section>
+
+  <!-- ============ CONTENT (follows chosen language) ============ -->
+  <main id="content" class="content" hidden>
+    <div class="lang-bar">
+      <button type="button" class="lang-switch" id="langSwitch"></button>
+    </div>
+
+    <!-- STAGE 2 · Journey -->
+    <section class="section" id="journey">
+      <p class="section-tag" data-i18n="tagJourney"></p>
+      <h2 data-i18n="journeyTitle"></h2>
+
+      <div class="now-grid" id="nowGrid"></div>
+
+      <ol class="timeline" id="timeline">
+        <span class="timeline-rail" aria-hidden="true"><span class="timeline-fill" id="timelineFill"></span></span>
+      </ol>
+    </section>
+
+    <!-- STAGE 3 · Physical projects -->
+    <section class="section" id="physical">
+      <p class="section-tag" data-i18n="tagPhysical"></p>
+      <h2 data-i18n="physicalTitle"></h2>
+      <p class="section-lede" data-i18n="physicalLede"></p>
+      <div class="cards" id="physicalCards"></div>
+    </section>
+
+    <!-- STAGE 4 · Tech projects -->
+    <section class="section" id="tech">
+      <p class="section-tag" data-i18n="tagTech"></p>
+      <h2 data-i18n="techTitle"></h2>
+      <p class="section-lede" data-i18n="techLede"></p>
+      <div class="cards cards-tech" id="techCards"></div>
+    </section>
+
+    <footer class="footer">
+      <p data-i18n="footerLine"></p>
+      <a href="#top" class="to-top" data-i18n="toTop"></a>
+    </footer>
+  </main>
+
+  <!-- project detail sheet -->
+  <dialog class="sheet" id="sheet">
+    <button type="button" class="sheet-close" id="sheetClose" aria-label="Close">×</button>
+    <div id="sheetBody"></div>
+  </dialog>
+
+  <script src="script.js"></script>
+</body>
+</html>
