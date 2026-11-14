@@ -16,7 +16,7 @@ Read this first in any new session working on this repo.
 - Known pitfall: if a file is open/dirty in VS Code, his editor can overwrite Claude's write. After writing, re-stage the file and verify the content landed; tell him to close the editor tabs before committing.
 
 ## Landing page (root of repo), done
-- `index.html`: structure. Loads `style.css?v=N` and `script.js?v=N`. **Bump N on every CSS/JS change** (GitHub Pages + browsers cache aggressively). Current: v=14.
+- `index.html`: structure. Loads `style.css?v=N` and `script.js?v=N`. **Bump N on every CSS/JS change** (GitHub Pages + browsers cache aggressively). Current: v=15.
 - `style.css`: dark drafting-table theme, animated aurora background (orange/magenta/blue/teal), JetBrains Mono labels, responsive. Fonts: Unbounded, Rubik, Secular One (HE headings).
 - `script.js`: all content and logic.
   - `LINKS`: LinkedIn, Instagram (elirandayan12), email, WhatsApp (972508512727).
@@ -31,6 +31,9 @@ Read this first in any new session working on this repo.
 ## API project (bonus: API + phone sensors), moved to its own repo
 - "Object Compass" lives in Eliran-technion/object-compass (own GitHub Pages site, own CLAUDE.md). Local: C:\Users\Elira\projects\object-compass.
 - The landing TECH item `id: "api"` links to https://eliran-technion.github.io/object-compass/. The old `api-project/` folder here was removed.
+
+## Kids app
+- TECH item `id: "kids"` links to Eliran-technion/kids-keyboard (Magic Keyboard, a locked full-screen toddler playground). Own repo + CLAUDE.md.
 
 ## Related repos
 - Eliran-technion/silver-robotics: FRC team structure site.
