@@ -100,7 +100,7 @@ const TIMELINE = [
     text: { en: "A working prototype of a portable 3D printer, developed as part of the challenge together with a venture concept, presented at the Technion's Sandbox Demo Day.",
             he: "אב טיפוס עובד של מדפסת תלת‑ממד ניידת, שפותח במסגרת האתגר יחד עם תפיסת מיזם, והוצג ב‑Sandbox Demo Day בטכניון." } },
   { when: { en: "Aug 2026 · today", he: "אוגוסט 2026 · היום" },
-    title: { en: "Operations & Technology Development Coordinator, Mehudar Center for Inventors", he: "רכז תפעול ופיתוח טכנולוגי, מרכז מהודר לממציאים" },
+    title: { en: "Engineering Needs Manager, Mehudar Center for Inventors", he: "מנהל צורכי הנדסה, מרכז מהודר לממציאים" },
     text: { en: "Lab management and engineering and technology support for the center's inventors.",
             he: "ניהול המעבדה ותמיכה בצרכים ההנדסיים והטכנולוגיים של ממציאי המרכז." },
     links: [{ label: { en: "T‑Hub · Mehudar", he: "T‑Hub · מהודר" }, url: "https://t-hub.technion.ac.il/" }] },

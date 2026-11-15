@@ -3,7 +3,7 @@
 Read this first in any new session working on this repo.
 
 ## Owner
-- Eliran Dayan, Mechanical Engineering student at the Technion. Ops & Technology Development Coordinator, Mehudar Center for Inventors.
+- Eliran Dayan, Mechanical Engineering student at the Technion. Engineering Needs Manager (מנהל צורכי הנדסה), Mehudar Center for Inventors.
 - Always explain to him in Hebrew. Site content is bilingual (EN + HE). In Hebrew math explanations use LaTeX ($...$).
 - New to git: give him exact terminal commands. He works in VS Code on Windows.
 
@@ -16,7 +16,7 @@ Read this first in any new session working on this repo.
 - Known pitfall: if a file is open/dirty in VS Code, his editor can overwrite Claude's write. After writing, re-stage the file and verify the content landed; tell him to close the editor tabs before committing.
 
 ## Landing page (root of repo), done
-- `index.html`: structure. Loads `style.css?v=N` and `script.js?v=N`. **Bump N on every CSS/JS change** (GitHub Pages + browsers cache aggressively). Current: v=16.
+- `index.html`: structure. Loads `style.css?v=N` and `script.js?v=N`. **Bump N on every CSS/JS change** (GitHub Pages + browsers cache aggressively). Current: v=17.
 - `style.css`: dark drafting-table theme, animated aurora background (orange/magenta/blue/teal), JetBrains Mono labels, responsive. Fonts: Unbounded, Rubik, Secular One (HE headings).
 - `script.js`: all content and logic.
   - `LINKS`: LinkedIn, Instagram (elirandayan12), email, WhatsApp (972508512727).
