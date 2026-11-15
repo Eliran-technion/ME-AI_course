@@ -273,7 +273,7 @@ const TECH = [
     short: { en: "An Android tablet app to run the Mehudar center's TVs, casting and air conditioners from one place.",
              he: "אפליקציית אנדרואיד לטאבלט שמפעילה את המסכים, השידור והמזגנים של מרכז מהודר ממקום אחד." },
     chips: ["Android", "Smart home", "v0.3"] },
-  { id: "hubweb", status: "wip", art: SVG.hubweb,
+  { id: "hubweb", status: "live", art: SVG.hubweb, url: "https://github.com/Eliran-technion/tech-hub-exploded-view",
     title: { en: "Tech Hub · a Claude skill for inventors", he: "האב טכנולוגי · סקיל לקלוד עבור ממציאים" },
     short: { en: "A Claude skill that helps inventors explain their product and its problems in a simple, graphic and visual way, with an interactive exploded view built from real CAD. First tested on H.U.B.",
              he: "סקיל לקלוד שנותן לממציאים יכולת להסביר את המוצר שלהם ואת הבעיות שלו בצורה פשוטה, גרפית וויזואלית, כולל מבט מפוצץ אינטראקטיבי מתוך ה‑CAD האמיתי. נבדק לראשונה על H.U.B." },

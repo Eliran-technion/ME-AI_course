@@ -16,7 +16,7 @@ Read this first in any new session working on this repo.
 - Known pitfall: if a file is open/dirty in VS Code, his editor can overwrite Claude's write. After writing, re-stage the file and verify the content landed; tell him to close the editor tabs before committing.
 
 ## Landing page (root of repo), done
-- `index.html`: structure. Loads `style.css?v=N` and `script.js?v=N`. **Bump N on every CSS/JS change** (GitHub Pages + browsers cache aggressively). Current: v=15.
+- `index.html`: structure. Loads `style.css?v=N` and `script.js?v=N`. **Bump N on every CSS/JS change** (GitHub Pages + browsers cache aggressively). Current: v=16.
 - `style.css`: dark drafting-table theme, animated aurora background (orange/magenta/blue/teal), JetBrains Mono labels, responsive. Fonts: Unbounded, Rubik, Secular One (HE headings).
 - `script.js`: all content and logic.
   - `LINKS`: LinkedIn, Instagram (elirandayan12), email, WhatsApp (972508512727).
@@ -36,5 +36,6 @@ Read this first in any new session working on this repo.
 - TECH item `id: "kids"` links to Eliran-technion/kids-keyboard (Magic Keyboard, a locked full-screen toddler playground). Own repo + CLAUDE.md.
 
 ## Related repos
+- Eliran-technion/tech-hub-exploded-view: the Tech Hub Claude skill for Mehudar inventors (linked from the TECH card `hubweb`).
 - Eliran-technion/silver-robotics: FRC team structure site.
 - Eliran-technion/desktop-calendar-widget: Python/PySide6 Windows calendar widget. `config.json` holds secret iCal URLs and is gitignored; only `config.example.json` is committed.
